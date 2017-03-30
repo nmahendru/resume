@@ -1,0 +1,4 @@
+#This below procedure is for installing latex on ubuntu
+
+1. sudo apt-get install texlive-full
+2. Now you need to download the texmaker package from there wesite. Download a .deb package and then install using apt-get install
