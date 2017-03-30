@@ -1,0 +1,77 @@
+%!TEX TS-program = xelatex
+\documentclass[9pt,twosided,a4paper]{scrreprt}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{lipsum}
+\usepackage{hyperref}
+
+
+\usepackage[lmargin=0.8cm, rmargin=0.8cm,tmargin=0.0cm,bmargin=0.3cm]{geometry}
+\renewcommand*{\chapterheadstartvskip}{\vspace{0cm}}
+\renewcommand*{\chapterheadendvskip}{\vspace{0cm}}
+
+\newcommand\myhead[1]
+
+\begin{document}
+\sffamily\mdseries\upshape
+\definecolor{dotgray}{rgb}{0.94,0.7,0.7}
+\textcolor{blue!45!white}{%
+\hspace{30pt}\textbf{\huge.}\hspace{30pt}\textbf{\huge.}\hspace{30pt}\textbf{\huge.}\hspace{30pt}\textbf{\huge.}\hspace{30pt}\huge.}\hspace{30pt}\textbf{\huge.}\hspace{30pt}\textbf{\huge.}\hspace{30pt}\textbf{\huge.}\hspace{30pt}\textbf{\huge.}\hspace{30pt}\textbf{\huge.}
+%
+\colorbox{black!45!white}{
+  \begin{minipage}[b][60pt]{180pt}
+  \Huge\hspace{38pt}{\color{white}\textbf{Nitin}Mahendru}
+  \end{minipage}
+}\\%
+\Large (530) 302 6081\hspace{320pt}Santa Clara / Bay Area %
+\\%
+\Large nitin.mahendru88@gmail.com\hspace{225pt}\href{https://www.linkedin.com/in/mahendrunitin}{https://www.linkedin.com/in/mahendrunitin}
+%\end{flushright}
+\\\\%
+\LARGE \textbf{\color{red}\Huge\hspace{10pt}::} \textbf{PROFESSIONAL EXPERIENCE}\\%
+\LARGE System Software Engineer II - Enterprise Secure Key Manager (ESKM), HPE, Sunnyvale CA $|$ July 2015 $-$ present%
+\begin{itemize}\itemsep0.4pt \parskip0pt \parsep0pt%
+\Large\item Patched smart array controller driver(cciss.ko) to help our application run on unsupported hardware.
+\Large\item Initiated and completed the upgrade of the keyserver application from CentOS 5 (32-bit) to CentOS 7 (64-bit). Additionally, redesigned and implemented \texttt{SystemVinit}-based initialization scripts to \texttt{Systemd}. 
+\Large\item Currently maintaining a linux-based load balancer for HPE's NSP Hardware Security Module (HSM) product. The load balancer (written in \texttt{C}) uses non-blocking I/O and \texttt{epoll} for servicing requests.
+\Large\item Enhanced the current key-server to store the master secret in a PCIe Hardware Security module (HSM). 
+\Large\item Included the kernel package to fix security vulnerabilities in the Over The Air (OTA) upgrade solution. The upgrade solution is a mix of \texttt{perl / bash / C}.
+\Large\item Acted in an interim DevOps role by installing ESXi and linux build machines.\\% 
+\end{itemize}
+\LARGE Software Engineering II Intern - IOS XE at Cisco, RTP NC $|$ Jun $-$ Sep 2014
+\begin{itemize}\itemsep0.4pt \parskip0pt \parsep0pt%scru
+\Large\item Created an innovative solution to address customer complaints related to bug tracking tools. Developed python scripts to identify errors in internal software. These scripts identified human errors in the release version entry and inserted corrections on a nightly basis. Initial deployment resulted in correcting over two-hundred (200) errors across four (4) major release branches.
+\Large\item Developed scripts to compute heatmaps for IOS XE release branches to identify files and functions that change most frequently.  Resulting data was used to drive team's QIP (Quality Improvement Plan) focus for improved test and development coverage for the hotspots in the heatmaps.\\%  
+\end{itemize}                                                                  
+System Engineer $|$ Tata Consultancy Services, Gurgaon, India $|$ March 2010  - August 2013\vspace{-5pt}%
+\begin{itemize}\itemsep0.4pt \parskip0pt \parsep0pt%
+\Large\item Responsibilities included development, enhancement, testing, deployment and production support for a set of web services for financial software. Built and tested 3rd party interfaces for ATM kiosks. Used the TIBCO suite / Core Java for doing the same.
+\Large\item Added functionality and enhanced the existing back-end IBM mainframe system for credit card rewards processing. Wrote a REXX script for automating production parallels.\\\\% 
+\end{itemize}
+\LARGE \textbf{\color{red}\Huge::}  \textbf{TECHNICAL SKILLS}\vspace{-5pt}%
+\begin{itemize}\itemsep0.4pt \parskip0pt \parsep0pt%	
+\Large\item C, C++, Core Java, Python, Perl, SQL(beginner), Shell Scripting,  Go(reading it up), regex parsing(utilities)
+\Large\item Beginner level knowledge of Linux Kernel Internals.%
+\Large\item Tools: gcc, g++, gdb, javac, git, valgrind.
+\Large\item Expertise with Linux initialization especially with Enterprise Linux(CentOS/RedHat)
+\Large\item Expertise with rpm building and patching.
+\Large\item Openssl,PKCS 11 API, python crypto package, python ssl package.
+\Large\item Sound crypto fundamentals
+\Large\item Good Understanding of Data Structures and Algorithms.
+\Large\item Working with Agile/Scrum Methodologies.\\% 
+\end{itemize}
+\LARGE \textbf{\color{red}\Huge::}  \textbf{EDUCATION}\\%  
+University Of California, Davis $|$ Master Of Science in Computer Science $|$ GPA 3.91/4.0\\%                                                                                    
+\hspace{10pt}Coursework: Algorithms, Programming Languages, O.S., A.I., Computer Architecture, Computer Networks\\\\%
+\LARGE \textbf{\color{red}\Huge::}  \textbf{THESIS}\\%
+\LARGE Socially aware Kernel $|$ University Of California, Davis $|$ Sept 2014 $-$ June 2015 \vspace{-5pt}%
+\begin{itemize}\itemsep0.4pt \parskip0pt \parsep0pt%
+\Large\item Inserted Social Informatics ID (SID) into the Linux kernel memory. 
+\Large\item Restricted file access based on the SID.
+\Large\item Logged all file system activity by intercepting file system related system calls. This was used for monitoring.
+\Large\item Adding system calls for SID retrieval and insertion.
+\end{itemize}%
+
+\end{document}
